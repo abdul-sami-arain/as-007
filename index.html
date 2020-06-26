@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+ <div class="div">   
+<h1 style="color: whitesmoke;font-weight: bolder; text-align: center;">CALCULATOR<img src="img/logo.png" alt="" height="35px" width="30px"></h1>
+</div>
+    <div class="screen">
+        <input id="result" type="text">
+    </div>
+       <div class="container">
+           <div class="row">
+          <div class="col-sm-12">
+              <button class="batn" onclick="number('3.124856893')" > &Pi; </button>
+              <button class="batn" onclick="number('2.71828')"> e </button>
+              <button class="batn" onclick="clearResult()"> C </button>
+              <button class="batn" onclick="number('%')"> %</button>
+              <button class="batn" id = "del" onclick="backspace()"> DEL</button>
+          </div> 
+          <div class="col-sm-12">    
+            <button class="batn" onclick="number('(')" > ( </button>
+             <button class="batn" onclick="number(')')"> ) </button>
+            <button class="batn" onclick="ran()"> Ran# </button>
+            <button class="batn" onclick="lnn()">ln</button>
+            <button class="batn" onclick="logg()">log</button>
+          </div>
+          <div class="col-sm-12">
+            <button class="batn" onclick="absolute()" > |x| </button> 
+            <button class="batn" onclick="square()"> x <sup>2</sup></button> 
+            <button class="batn" onclick=" root()" > sqrt</button> 
+            <button class="batn" onclick="cube()"> x <sup>3</sup></button> 
+             <button class="batn" onclick="fact()">!</button> 
+          </div> 
+          <div class="col-sm-12"> 
+            <button style="font-weight: bold; font-size: 15pt;" class="batn" onclick="number('7')"> 7 </button> 
+            <button style="font-weight: bold; font-size: 15pt;" class="batn" onclick="number('8')"> 8</button> 
+            <button style="font-weight: bold; font-size: 15pt;" class="batn" onclick="number('9')"> 9</button> 
+            <button class="batn" onclick="number('*')"> x</button> 
+            <button class="batn" id = "del" onclick="sine()">sin</button> 
+        </div> 
+        <div class="col-sm-12">
+            <button style="font-weight: bold; font-size: 15pt;" class="batn" onclick="number('4')"> 4 </button> </td>
+            <button style="font-weight: bold; font-size: 15pt;" class="batn" onclick="number('5')"> 5</button> </td>
+            <button style="font-weight: bold; font-size: 15pt;" class="batn" onclick="number('6')"> 6</button> </td>
+            <button class="batn" onclick="number('-')"> -</button> </td>
+            <button class="batn" id = "del" onclick="cose()">cos</button> </td>
+        </div> 
+        <div class="col-sm-12">   
+            <button style="font-weight: bold; font-size: 15pt;" class="batn" onclick="number('1')"> 1 </button> </td>
+            <button style="font-weight: bold; font-size: 15pt;" class="batn" onclick="number('2')"> 2</button> </td>
+            <button style="font-weight: bold; font-size: 15pt;" class="batn" onclick="number('3')"> 3</button> </td>
+            <button class="batn" onclick="number('+')"> +</button> </td>
+            <button class="batn" id = "del" onclick="tangent()">tan</button> </td>
+        </div> 
+        <div class="col-sm-12">
+            <button class="batn" onclick="number('00')"> 00</button>
+            <button style="font-weight: bold; font-size: 15pt;" class="batn" onclick="number('0')"> 0</button>
+            <button class="batn" onclick="number('.')"> . </button>
+            <button class="batn" onclick="number('/')"> /</button> 
+            <button class="result batn" onclick="getresult()"> = </button>
+             
+        </div> 
+    </div>
+</div>
+   
+</div>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
+
+
+
+
